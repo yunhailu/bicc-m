@@ -5,12 +5,13 @@
 </template>
 
 <script>
+import 'font-awesome/less/font-awesome.less';
 export default {
     name: 'App'
 };
 </script>
 
-<style>
+<style lang="less">
     html, body, * {
         margin: 0;
         padding: 0;
