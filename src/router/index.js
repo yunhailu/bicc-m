@@ -14,8 +14,8 @@ export default new Router({
     }, {
         path: '/',
         component: (resolve) => {
-            require.ensure(['@/components/Hello/Hello'], () => {
-                resolve(require('@/components/Hello/Hello'));
+            require.ensure(['@/components/Home/Home'], () => {
+                resolve(require('@/components/Home/Home'));
             });
         }
     }]
