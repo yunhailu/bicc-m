@@ -1,22 +1,37 @@
 /**
  * Created by yunhailu on 2018/4/5.
  */
-import Vue from 'vue'
+import Vue from 'vue';
 import Resource from 'vue-resource';
 Vue.use(Resource);
 
+const mackRoot = 'http://192.168.1.103:3000';
 const resourceRoot = 'http://www.hibicc.com/drupalapi';
-const API = {
+const API = process.env.NODE_ENV != 'development' ? {
     HOMES_SLIDERS: `${resourceRoot}/homesliders.json`,
     HOMES_ARTICLE: `${resourceRoot}/node/57.json`,
     HOMES_RECOMMENDS: `${resourceRoot}/homerecommends.json`
+} : {
+    HOMES_SLIDERS: `${mackRoot}/homesliders`,
+    HOMES_ARTICLE: `${mackRoot}/node_57`,
+    HOMES_RECOMMENDS: `${mackRoot}/homerecommends`
 };
 
 const Request = {
-    jsonp (url,params) {
-        return Vue.http.jsonp(url, { params, credentials: true })
-        .then(response => response.data)
-        .catch(error => error);
+    jsonp (URL, params) {
+        return Vue.http.jsonp(URL, { params, credentials: true })
+            .then(response => response.data)
+            .catch(err => err);
+    },
+    get (url, params) {
+        return Vue.http.get(url, { params })
+            .then(response => response.data)
+            .catch(error => error);
+    },
+    post (url, params) {
+        return Vue.http.get(url, params)
+            .then(response => response.data)
+            .catch(error => error);
     }
 };
 
@@ -26,7 +41,7 @@ const Request = {
  * @return {Promise}
  * */
 export const homesSliders = (params = {}) => {
-    return Request.jsonp(API.HOMES_LIDERS, { params, credentials: true } );
+    return Request.jsonp(API.HOMES_SLIDERS, { params, credentials: true });
 };
 
 /**
@@ -35,7 +50,7 @@ export const homesSliders = (params = {}) => {
  * @return {Promise}
  * */
 export const homesArticle = (params = {}) => {
-    return Request.jsonp(API.HOMES_ARTICLE, { params, credentials: true } );
+    return Request.jsonp(API.HOMES_ARTICLE, { params, credentials: true });
 };
 
 /**
@@ -44,5 +59,5 @@ export const homesArticle = (params = {}) => {
  * @return {Promise}
  * */
 export const homesRecommends = (params = {}) => {
-    return Request.jsonp(API.HOMES_RECOMMENDS, { params, credentials: true } );
+    return Request.jsonp(API.HOMES_RECOMMENDS, { params, credentials: true });
 };
