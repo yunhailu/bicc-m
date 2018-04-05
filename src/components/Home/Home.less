@@ -7,4 +7,44 @@
         //width: 100%;
         font-size: 32 * @px;
     }
+    &-recommends{
+        background-color: white;
+        margin: 30 * @px 0 0;
+        &-title{
+            font-size: 50 * @px;
+            color: @color-deek;
+            font-weight: bold;
+            padding: 15 * @px 0;
+            margin: 0 40 * @px;
+            border-bottom: 1px solid #dedede;
+            text-align: center;
+        }
+        &-list{
+            &-item{
+                border-bottom: 5 * @px solid #dfdfdf;
+                padding: 0 0 10 * @px;
+                &-title{
+                    font-size: 36 * @px;
+                    padding: 0 @padding;
+                    color: @color-deek;
+                }
+                &-imgs{
+                    &-item{
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            display: inline-block;
+                        }
+                    }
+                }
+                &-cxt{
+                    padding: @padding;
+                    font-size: 30 * @px;
+                }
+            }
+        }
+    }
 }

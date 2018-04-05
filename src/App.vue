@@ -17,11 +17,22 @@ export default {
         padding: 0;
         border: 0;
     }
+    a{
+        text-decoration: none;
+    }
+    list{
+        list-style: none;
+    }
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-align: center;
+        /*text-align: center;*/
         color: #2c3e50;
+        height: 100%;
+        background-color: #f3f3f3;
+    }
+    .vux-indicator{
+        font-size: 14px;
     }
 </style>
