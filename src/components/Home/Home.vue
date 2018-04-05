@@ -1,10 +1,11 @@
 <template>
-    <div class="hello">
-        <i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
-        <h1>{{ msg }}</h1>
-        <group>
-            <cell title="title" value="value"></cell>
-        </group>
+    <div class="home">
+        <!--<view-box ref="viewBox">-->
+        <div class="home-search">
+            <search v-model="searchValue" placeholder="search" @on-submit="searchAction"></search>
+        </div>
+        <tab-bar></tab-bar>
+        <!--</view-box>-->
     </div>
 </template>
 
@@ -14,17 +15,26 @@
 </style>
 
 <script>
-import { Group, Cell } from 'vux';
+import { Search, ViewBox, Icon } from 'vux';
+import TabBar from '../Common/TabBar/TabBar.vue';
+
 export default {
     name: 'Hello',
     data () {
         return {
+            searchValue: '',
             msg: 'Welcome to BICC!'
         };
     },
-    components: {
-        Group,
-        Cell
-    }
+    methods: {
+        searchAction () {
+            if (!this.searchValue) {
+                return;
+            }
+            console.log(this.searchValue);
+            this.searchValue = '';
+        }
+    },
+    components: { TabBar, Search, ViewBox, Icon }
 };
 </script>
