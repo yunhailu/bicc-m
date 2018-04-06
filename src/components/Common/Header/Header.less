@@ -6,49 +6,60 @@
     top: 0;
     left: 0;
     right: 0;
-    //z-index: 99999;
     position: fixed;
     background-color: @bgc-deek;
-    &-unit{
-        position: relative;
-        padding: 20 * @px;
-        color: white;
-        font-size: 32 * @px;
-        line-height: 40 * @px;
-        width: 40 * @px;
-    }
-    &-left{
-        float: left;
-    }
-    &-right{
-        float: right;
-        font-size: 36 * @px;
-    }
-    &-center{
-        margin: 0 60 * @px;
-        padding: 20 * @px;
-        &-logo{
-            margin: 0 auto 20 * @px;
-            width: 80 * @px;
-            height: auto;
-            border-radius: 5 * @px;
-        }
-        &-title{
-            font-size: 26 * @px;
-            font-weight: bold;
-            line-height: 42 * @px;
+    &-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;  right: 0;
+        //z-index: 999;
+        &-unit{
+            position: relative;
+            padding: 20 * @px;
             color: white;
-            text-align: center;
+            font-size: 32 * @px;
+            line-height: 40 * @px;
+            width: 40 * @px;
+        }
+        &-left{
+            position: absolute;
+            left: 0;
+            //float: left;
+            z-index: 1001;
+        }
+        &-right{
+            position: absolute;
+            right: 0;
+            //float: right;
+            font-size: 36 * @px;
+        }
+        &-center{
+            position: relative;
+            margin: 0 60 * @px;
+            padding: 20 * @px;
+            &-logo{
+                margin: 0 auto 20 * @px;
+                width: 80 * @px;
+                height: auto;
+                border-radius: 5 * @px;
+            }
+            &-title{
+                font-size: 26 * @px;
+                font-weight: bold;
+                line-height: 42 * @px;
+                color: white;
+                text-align: center;
+            }
         }
     }
     &-drawer{
         position: absolute;
         left: 0; right: 0;
         top: 0; bottom: 0;
+        z-index: 1000;
         &-content{
             background-color: #efefef;
             height: 100%;
-            z-index: 99999;
             &-title{
                 height: 400 * @px;
                 width: 200 * @px;

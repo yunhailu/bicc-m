@@ -8,15 +8,17 @@
                 </div>
             </drawer>
         </div>
-        <div class="header-unit header-left" @click="switchTab">
-            <i class="fa fa-th-list"></i>
-        </div>
-        <div class="header-unit header-right">
-            <i class="fa fa-home"></i>
-        </div>
-        <div class="header-center">
-            <!--<img class="header-center-logo" src="../../../assets/logo.png" />-->
-            <div class="header-center-title">BEIJING INTERNATIONAL CHINESE COLLAGE</div>
+        <div class="header-wrapper">
+            <div class="header-wrapper-unit header-wrapper-left" @click="switchTab" v-show="!drawerShow">
+                <i class="fa fa-th-list"></i>
+            </div>
+            <div class="header-wrapper-unit header-wrapper-right">
+                <i class="fa fa-home"></i>
+            </div>
+            <div class="header-wrapper-center">
+                <!--<img class="header-center-logo" src="../../../assets/logo.png" />-->
+                <div class="header-wrapper-center-title">BEIJING INTERNATIONAL CHINESE COLLAGE</div>
+            </div>
         </div>
     </div>
 </template>
