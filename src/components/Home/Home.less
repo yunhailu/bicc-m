@@ -1,20 +1,30 @@
 @import "../common.less";
 
 .home{
+    position: relative;
     height: 100%;
     width: 100%;
     &-search{
         //width: 100%;
         font-size: 32 * @px;
     }
+    &-header{
+        position: absolute;
+        top: 0;  bottom: 0;
+        left: 0;  right: 0;
+        z-index: 99999;
+    }
     &-swipers{
+        margin-top: @header-height;
         height: 240 * @px;
     }
     &-intro{
         background-color: white;
         &-logo{
+            padding: 0 @padding @padding;
+            box-sizing: border-box;
             width: 750 * @px;
-            height: 90 * @px;
+            height: 120 * @px;
             display: -webkit-box;
         }
         &-cxt{

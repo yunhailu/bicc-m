@@ -1,7 +1,7 @@
 <template>
     <div class="copyright">
         <div class="copyright-text">E-mail: info@hibicc.com</div>
-        <div class="copyright-text">IPC-09002718</div>
+        <div class="copyright-text">ICP-09002718</div>
         <div class="copyright-text">© 2018 copyright hibicc.com</div>
     </div>
 </template>
