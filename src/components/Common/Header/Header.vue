@@ -1,6 +1,6 @@
 <template>
     <div class="header" :class="{'header-active': drawerShow}">
-        <div class="header-drawer">
+        <div class="header-drawer" :class="{'header-drawer-active': drawerShow}">
             <drawer width="200px" :show.sync="drawerShow" show-mode="overlay" placement="left"
                     :drawer-style="{'background-color':'#35495e', width: '200px'}">
                 <div slot="drawer" class="header-drawer-content">
