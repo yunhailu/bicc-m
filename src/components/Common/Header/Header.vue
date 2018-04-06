@@ -1,10 +1,20 @@
 <template>
     <div class="header" :class="{'header-active': drawerShow}">
         <div class="header-drawer" :class="{'header-drawer-active': drawerShow}">
-            <drawer width="200px" :show.sync="drawerShow" show-mode="overlay" placement="left"
+            <drawer :show.sync="drawerShow" show-mode="overlay" placement="left"
                     :drawer-style="{'background-color':'#35495e', width: '200px'}">
                 <div slot="drawer" class="header-drawer-content">
-                    <div class="header-drawer-content-title">hello world!</div>
+                    <div class="header-drawer-content-top">
+                        <img class="header-drawer-content-top-icon" src="../../../assets/logo.png" />
+                        <span class="header-drawer-content-top-text">BICC</span>
+                    </div>
+                    <ul class="header-drawer-content-list">
+                        <li class="header-drawer-content-list-item" :key="index" v-for="(item, index) in list">
+                            <i class="fa" :class="'fa-'+item.icon"></i>
+                            <span class="header-drawer-content-list-item-text">{{item.text}}</span>
+                        </li>
+                    </ul>
+                    <div class="header-drawer-content-bottom">© 2018 copyright hibicc.com</div>
                 </div>
             </drawer>
         </div>
@@ -30,13 +40,15 @@
 
 <script>
 import { Drawer } from 'vux';
+import { headerList, host } from '../../../libs/constants';
 
 export default {
     name: 'Header',
     data () {
         return {
+            host,
             drawerShow: false,
-            msg: 'Welcome to BICC!'
+            list: headerList
         };
     },
     methods: {

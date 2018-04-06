@@ -13,7 +13,10 @@
     }
     &-wrapper{
         background-color: @bgc-deek;
+        height: @header-height;
         position: absolute;
+        padding: 10 * @px 0;
+        box-sizing: border-box;
         top: 0;
         left: 0;  right: 0;
         z-index: 100;
@@ -67,9 +70,59 @@
         &-content{
             background-color: #efefef;
             height: 100%;
-            &-title{
+            &-top{
+                position: relative;
+                left: 0;    right: 0;
+                top: 0;
+                height: @header-height;
+                line-height: @header-height;
+                box-sizing: border-box;
+                padding-bottom: 10 * @px;
+                text-align: center;
+                background-color: @bgc-deek;
+                &-icon{
+                    width: 70 * @px;
+                    height: 56 * @px;
+                    border-radius: 10 * @px;
+                    margin-top: -5 * @px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &-text{
+                    color: white;
+                    font-size: 32 * @px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: -5 * @px;
+                    padding: 0 30 * @px;
+                }
+            }
+            &-list{
                 height: 400 * @px;
-                width: 200 * @px;
+                //width: 200 * @px;
+                padding: 0 @padding;
+                &-item{
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid @color;
+                    &-text, i{
+                        font-size: 32 * @px;
+                        line-height: 72 * @px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &-bottom{
+                position: absolute;
+                left: 0;    right: 0;
+                bottom: 0;
+                height: 80 * @px;
+                text-align: center;
+                background-color: @bgc-deek;
+                font-size: 24 * @px;
+                line-height: 80 * @px;
+                color: white;
             }
         }
     }
