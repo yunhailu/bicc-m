@@ -7,8 +7,27 @@
         //width: 100%;
         font-size: 32 * @px;
     }
-    &-recommends{
+    &-swipers{
+        height: 240 * @px;
+    }
+    &-intro{
         background-color: white;
+        &-logo{
+            width: 750 * @px;
+            height: 90 * @px;
+            display: -webkit-box;
+        }
+        &-cxt{
+            font-size: 26 * @px;
+            padding: 30 * @px;
+            text-align: justify;
+            &-bold{
+                font-weight: bolder;
+            }
+        }
+    }
+    &-recommends{
+        //background-color: white;
         margin: 30 * @px 0 0;
         &-title{
             font-size: 50 * @px;
@@ -21,12 +40,19 @@
         }
         &-list{
             &-item{
-                border-bottom: 5 * @px solid #dfdfdf;
+                overflow: hidden;
+                margin: @padding;
+                border-radius: @card-radius-normal;
+                background-color: white;
+                //border-bottom: 7 * @px solid #dfdfdf;
+                box-shadow: 0 * @px 5 * @px 10 * @px #dfdfdf;
                 padding: 0 0 10 * @px;
                 &-title{
+                    margin: 40 * @px 0 0 ;
                     font-size: 36 * @px;
                     padding: 0 @padding;
                     color: @color-deek;
+                    text-align: center;
                 }
                 &-imgs{
                     &-item{
