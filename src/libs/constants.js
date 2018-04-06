@@ -8,11 +8,11 @@
 export const headerList = [{
     icon: 'home', text: 'Home', router: 'home'
 }, {
-    icon: 'folder', text: 'Programs', router: 'home'
+    icon: 'folder', text: 'Programs', router: 'programs'
 }, {
-    icon: 'server', text: 'Services', router: 'home'
+    icon: 'server', text: 'Services', router: 'service'
 }, {
-    icon: 'users', text: 'About us', router: 'home'
+    icon: 'users', text: 'About us', router: 'about'
 }];
 
 export const host = 'hibicc.com';

@@ -18,5 +18,12 @@ export default new Router({
                 resolve(require('@/components/Home/Home'));
             });
         }
+    }, {
+        path: '/programs',
+        component: (resolve) => {
+            require.ensure(['@/components/Programs/Programs'], () => {
+                resolve(require('@/components/Programs/Programs'));
+            });
+        }
     }]
 });
