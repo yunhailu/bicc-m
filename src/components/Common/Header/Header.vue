@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="header" :class="{'header-active': drawerShow}">
         <div class="header-drawer">
             <drawer width="200px" :show.sync="drawerShow" show-mode="overlay" placement="left"
                     :drawer-style="{'background-color':'#35495e', width: '200px'}">
@@ -9,10 +9,10 @@
             </drawer>
         </div>
         <div class="header-wrapper">
-            <div class="header-wrapper-unit header-wrapper-left" @click="switchTab" v-show="!drawerShow">
+            <div class="header-wrapper-unit header-wrapper-left" @click="switchTab">
                 <i class="fa fa-th-list"></i>
             </div>
-            <div class="header-wrapper-unit header-wrapper-right">
+            <div class="header-wrapper-unit header-wrapper-right" @click="switchHome">
                 <i class="fa fa-home"></i>
             </div>
             <div class="header-wrapper-center">
@@ -41,8 +41,11 @@ export default {
     },
     methods: {
         switchTab () {
-            console.log(123);
+            console.log('switchTab');
             this.drawerShow = true;
+        },
+        switchHome () {
+            console.log('switchHome');
         }
     },
     components: { Drawer }
