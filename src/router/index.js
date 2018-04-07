@@ -3,7 +3,13 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 
-export default new Router({
+const routerBefore = (to, from, next) => {
+    console.log('to', to);
+    document.body.scrollTop = 0;
+    return next();
+};
+
+const router = new Router({
     routes: [{
         path: '/hello',
         component: (resolve) => {
@@ -12,6 +18,7 @@ export default new Router({
             });
         }
     }, {
+        name: 'home',
         path: '/',
         component: (resolve) => {
             require.ensure(['@/components/Home/Home'], () => {
@@ -19,6 +26,7 @@ export default new Router({
             });
         }
     }, {
+        name: 'programs',
         path: '/programs',
         component: (resolve) => {
             require.ensure(['@/components/Programs/Programs'], () => {
@@ -27,3 +35,7 @@ export default new Router({
         }
     }]
 });
+
+router.beforeEach(routerBefore.bind(router));
+
+export default router;

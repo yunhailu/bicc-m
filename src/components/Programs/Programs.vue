@@ -9,11 +9,11 @@
                 <tab-item @on-item-click="handler">Cost</tab-item>
             </tab>
         </div>
-        <div class="programs-content">
-            <div class="programs-content-courses">
+        <div class="programs-content" :class="[active == 'courses' ? 'programs-content-courses-active' : 'programs-content-cost-active']">
+            <div class="programs-content-item programs-content-courses">
                 <courses :courses.sync="courses"></courses>
             </div>
-            <div class="programs-content-cost">
+            <div class="programs-content-item programs-content-cost">
                 <cost :cost="cost"></cost>
             </div>
         </div>
@@ -41,12 +41,14 @@ export default {
     data () {
         return {
             courses: {},
-            cost: {}
+            cost: {},
+            active: 'courses'
         };
     },
     methods: {
         handler (index) {
-            console.log(index);
+            this.active = index == 0 ? 'courses' : 'cost';
+            console.log(index, this.active);
         },
         getCourses () {
             return getCourses().then(resp => {

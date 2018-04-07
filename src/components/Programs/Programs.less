@@ -9,7 +9,26 @@
         margin-top: @header-height;
     }
     &-content{
-        &-courses{}
-        &-cost{}
+        width: 750 * 2 * @px;
+        display: flex;
+        &-item{
+            width: 750 * @px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        &-courses{
+            &-active{
+                -webkit-transform: translate(0, 0);
+                -webkit-transition: transform .8s;
+            }
+        }
+        &-cost{
+            &-active{
+                -webkit-transform: translate(-750 * @px, 0);
+                -webkit-transition: transform .8s;
+                height: 1230 * @px;
+                overflow: hidden;
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@
                         <span class="header-drawer-content-top-text">BICC</span>
                     </div>
                     <ul class="header-drawer-content-list">
-                        <li class="header-drawer-content-list-item" :key="index" v-for="(item, index) in list">
+                        <li class="header-drawer-content-list-item" :key="index" v-for="(item, index) in list" @click="enterPage(item)">
                             <i class="fa" :class="'fa-'+item.icon"></i>
                             <span class="header-drawer-content-list-item-text">{{item.text}}</span>
                         </li>
@@ -56,8 +56,13 @@ export default {
             console.log('switchTab');
             this.drawerShow = true;
         },
+        enterPage (item) {
+            console.log(item);
+            this.$router.push({ name: item.router });
+        },
         switchHome () {
-            console.log('switchHome');
+            if (this.$route.name == 'home') return;
+            this.$router.push({ name: 'home' });
         }
     },
     components: { Drawer }
