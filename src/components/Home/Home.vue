@@ -75,7 +75,6 @@ export default {
             if (!this.searchValue) {
                 return;
             }
-            console.log(this.searchValue);
             this.searchValue = '';
         },
         recommendsAction (item) {
@@ -98,18 +97,14 @@ export default {
         },
         getRecommends () {
             return homesRecommends().then(resp => {
-                console.log(resp);
                 if (resp.length > 0) {
                     this.recommends = resp;
-                    console.log(this.recommends.map(item => item.title));
-                    console.log(this.recommends.map(item => getAHref(item.title)[0]));
-                    console.log(this.recommends.map(item => getHTMLCxt(item.title, 'a')[0]));
                 }
             });
         },
         init () {
             this.getSlider();
-            this.getArticle();
+            // this.getArticle();
             this.getRecommends();
         }
     },

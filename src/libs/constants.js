@@ -16,3 +16,5 @@ export const headerList = [{
 }];
 
 export const host = 'hibicc.com';
+
+export const isDev = process.env.NODE_ENV == 'development';
