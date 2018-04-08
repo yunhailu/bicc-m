@@ -17,7 +17,9 @@
                 <!--<accommodations :accommodations="service"></accommodations>-->
             </div>
         </div>
-        <copyright></copyright>
+        <div class="services-bottom">
+            <copyright></copyright>
+        </div>
     </div>
 </template>
 

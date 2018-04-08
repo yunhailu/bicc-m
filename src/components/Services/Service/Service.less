@@ -29,9 +29,16 @@
     }
     &-cards{
         margin-top: @padding;
+        //column-count: 2;
+        //column-gap: 0;
         &-item{
             margin-bottom: 20 * @px;
             background-color: white;
+            //width: 350 * @px;
+            //margin-left: 16.5 * @px;
+            //float: left;
+            //break-inside: avoid;
+            //box-sizing: border-box;
             &-image{
                 width: 100%;
                 display: block;
@@ -40,15 +47,18 @@
             &-content{
                 padding: 30 * @px;
                 &-title{
-                    color: #999;
                     font-size: 32 * @px;
+                    padding-bottom: 20 * @px;
+                    font-weight: bold;
                 }
                 &-text{
+                    color: #969696;
                     font-size: 28 * @px;
-                    line-height: 42 * @px;
+                    line-height: 38 * @px;
                 }
                 &-date{
-                    color: #999;
+                    color: #999999;
+                    margin-top: 10 * @px;
                     font-size: 24 * @px;
                 }
             }

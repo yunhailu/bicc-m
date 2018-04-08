@@ -33,20 +33,7 @@ export default {
     name: 'Service',
     props: ['service'],
     data () {
-        return {
-            images: [
-                'http://www.hibicc.com/sites/hibicc.com/files/cost.png',
-                'http://www.hibicc.com/sites/hibicc.com/files/regular_0.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/regular%20homestay.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/regular%20dorm.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/intensive.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/intensive%20homestay.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/Capture%20d%E2%80%99e%CC%81cran%202017-02-08%20a%CC%80%2011.45.51.png',
-                'http://www.hibicc.com/sites/hibicc.com/files/private.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/private%20homestay.JPG',
-                'http://www.hibicc.com/sites/hibicc.com/files/private%20dorm.JPG'
-            ]
-        };
+        return {};
     },
     methods: {
         itemAction (item) {
