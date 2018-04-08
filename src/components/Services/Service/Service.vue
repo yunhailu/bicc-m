@@ -10,6 +10,7 @@
                 <card>
                     <img slot="header" class="service-cards-item-image" :src="item.image" />
                     <div slot="content" class="service-cards-item-content">
+                        <div class="service-cards-item-more">more <i class="fa fa-angle-right"></i></div>
                         <p class="service-cards-item-content-title" v-html="item.title"></p>
                         <p class="service-cards-item-content-text">{{item.desc}}</p>
                         <p class="service-cards-item-content-date">Posted on {{item.date | formatDate}}</p>
