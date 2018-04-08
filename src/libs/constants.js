@@ -10,7 +10,7 @@ export const headerList = [{
 }, {
     icon: 'folder', text: 'Programs', router: 'programs'
 }, {
-    icon: 'server', text: 'Services', router: 'service'
+    icon: 'server', text: 'Services', router: 'services'
 }, {
     icon: 'users', text: 'About us', router: 'about'
 }];

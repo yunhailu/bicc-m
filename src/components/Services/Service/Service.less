@@ -1,0 +1,57 @@
+@import "../../common.less";
+
+.service{
+    //background-color: white;
+    &-intro{
+        background-color: white;
+        padding-bottom: 20 * @px;
+        &-image{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        p{
+            font-size: 28 * @px;
+            text-align: justify;
+            line-height: 42 * @px;
+            padding: 20 * @px @padding 0;
+        }
+    }
+    &-item{
+        width: 100%;
+        padding: 10 * @px;
+        box-sizing: border-box;
+        &-image{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &-cards{
+        margin-top: @padding;
+        &-item{
+            margin-bottom: 20 * @px;
+            background-color: white;
+            &-image{
+                width: 100%;
+                display: block;
+                border-bottom: 1px solid #efefef;
+            }
+            &-content{
+                padding: 30 * @px;
+                &-title{
+                    color: #999;
+                    font-size: 32 * @px;
+                }
+                &-text{
+                    font-size: 28 * @px;
+                    line-height: 42 * @px;
+                }
+                &-date{
+                    color: #999;
+                    font-size: 24 * @px;
+                }
+            }
+        }
+    }
+}
