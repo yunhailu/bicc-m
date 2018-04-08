@@ -16,7 +16,8 @@ const API = !isDev ? {
     COURSES: `${resourceRoot}/courses.json`,
     GET_COURSE_DETAIL: `${resourceRoot}/node/299.json`,
     GET_PRODUCTS: `${resourceRoot}/products.json`,
-    GET_SERVICES: `${resourceRoot}/services.json`
+    GET_SERVICES: `${resourceRoot}/services.json`,
+    GET_ACCOMMODATIONS: `${resourceRoot}/accommodations.json`
 } : {
     HOMES_SLIDERS: `${mackRoot}/homesliders`,
     HOMES_ARTICLE: `${mackRoot}/node_57`,
@@ -24,7 +25,8 @@ const API = !isDev ? {
     COURSES: `${mackRoot}/courses`,
     GET_COURSE_DETAIL: `${mackRoot}/node_299`,
     GET_PRODUCTS: `${mackRoot}/products`,
-    GET_SERVICES: `${mackRoot}/services`
+    GET_SERVICES: `${mackRoot}/services`,
+    GET_ACCOMMODATIONS: `${mackRoot}/accommodations`
 };
 
 const getNodeURL = id => {
@@ -119,4 +121,13 @@ export const getProducts = (params = {}) => {
  * */
 export const getServices = (params = {}) => {
     return Request.ajax(API.GET_SERVICES, { params, credentials: true });
+};
+
+/**
+ * @description 项目页面信息, 获取accommodations列表信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const getAccommodations = (params = {}) => {
+    return Request.ajax(API.GET_ACCOMMODATIONS, { params, credentials: true });
 };

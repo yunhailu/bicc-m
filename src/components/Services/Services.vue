@@ -14,7 +14,7 @@
                 <service :service.sync="service"></service>
             </div>
             <div class="services-content-item services-content-accommodations">
-                <!--<accommodations :accommodations="service"></accommodations>-->
+                <accommodations :accommodations="accommodations"></accommodations>
             </div>
         </div>
         <div class="services-bottom">
@@ -36,7 +36,7 @@ import Copyright from '../Common/Copyright/Copyright.vue';
 import Service from './Service/Service.vue';
 import Accommodations from './Accommodations/Accommodations.vue';
 import { getImageSrc } from '../../libs/reg';
-import { getServices } from '../../libs/resourceApi';
+import { getServices, getAccommodations } from '../../libs/resourceApi';
 
 export default {
     name: 'Services',
@@ -65,8 +65,22 @@ export default {
                 return [];
             });
         },
+        getAccommodations () {
+            return getAccommodations().then(resp => {
+                if (resp.length > 0) {
+                    this.accommodations = _.map(resp, item => {
+                        item.image = getImageSrc(item.field_image)[0];
+                        return item;
+                    });
+                    console.log(this.accommodations);
+                    return this.accommodations;
+                }
+                return [];
+            });
+        },
         init () {
             this.getServices();
+            this.getAccommodations();
         }
     },
     mounted () {

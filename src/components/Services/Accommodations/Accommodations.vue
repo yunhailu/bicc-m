@@ -1,7 +1,22 @@
 <template>
     <div class="accommodations">
-        <div class="accommodations-item" :key="groupName" v-for="(group, groupName) in accommodations">
-            <panel :header="groupName" :list="group" type="4" @on-click-item="itemAction"></panel>
+        <div class="accommodations-intro">
+            <!--<img class="accommodations-intro-image" src="http://www.hibicc.com/system/files/720998880946795072.jpg" />-->
+            <p>BICC has several accommodation In Beijing available to students, all within close proximity to the school. Accommodation are carefully selected and is ensured that BICC sponsored housing is both safe and comfortable. Accommodation fees vary according to the type of accommodation and the duration of stay.</p>
+            <p class="bold">Current BICC accommodation options include:</p>
+            <!--<p>Homestay in Beijing - Private studio - Shared studio - MaQuaYing dormitory.</p>-->
+        </div>
+        <div class="accommodations-cards">
+            <div class="accommodations-cards-item" :key="index" v-for="(item, index) in accommodations" @click="itemAction(item)">
+                <card>
+                    <img slot="header" class="accommodations-cards-item-image" :src="item.image" />
+                    <div slot="content" class="accommodations-cards-item-content">
+                        <div class="accommodations-cards-item-more">more <i class="fa fa-angle-right"></i></div>
+                        <p class="accommodations-cards-item-content-title" v-html="item.title"></p>
+                        <p class="accommodations-cards-item-content-text">{{item.desc}}</p>
+                    </div>
+                </card>
+            </div>
         </div>
     </div>
 </template>
@@ -12,7 +27,7 @@
 </style>
 
 <script>
-import { Panel } from 'vux';
+import { Card } from 'vux';
 
 export default {
     name: 'Accommodations',
@@ -30,6 +45,6 @@ export default {
             console.log(course.nid);
         }
     },
-    components: { Panel }
+    components: { Card }
 };
 </script>

@@ -1,6 +1,84 @@
 @import "../../common.less";
 
 .accommodations{
+    &-intro{
+        background-color: white;
+        padding-bottom: 20 * @px;
+        &-image{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        p{
+            font-size: 28 * @px;
+            text-align: justify;
+            line-height: 42 * @px;
+            padding: 20 * @px @padding 0;
+        }
+
+        p.bold{
+            font-weight: bold;
+            font-size: 28 * @px;
+        }
+    }
+    &-cards{
+        margin-top: @padding;
+        //column-count: 2;
+        //column-gap: 0;
+        &-item{
+            position: relative;
+            margin-bottom: 20 * @px;
+            background-color: white;
+            margin: 30 * @px;
+            overflow: hidden;
+            border-radius: 15 * @px;
+            box-shadow: 0 5 * @px 15 * @px #cdcdcd;
+            //width: 350 * @px;
+            //margin-left: 16.5 * @px;
+            //float: left;
+            //break-inside: avoid;
+            //box-sizing: border-box;
+            &-image{
+                width: 100%;
+                display: block;
+                border-bottom: 1px solid #efefef;
+            }
+            &-more{
+                @h: 80 * @px;
+                position: absolute;
+                //top: 400 * @px;
+                bottom: 10 * @px;
+                right: 0 * @px;
+                width: 160 * @px;
+                height: @h;
+                text-align: center;
+                font-size: 28 * @px;
+                line-height: @h;
+                border-radius: 10 * @px;
+                //background-color: @color-deek;
+                //color: white;
+                color: @color-deek;
+            }
+            &-content{
+                padding: @padding @padding 70 * @px;
+                &-title{
+                    font-size: 32 * @px;
+                    padding-bottom: 20 * @px;
+                    font-weight: bold;
+                }
+                &-text{
+                    color: #969696;
+                    font-size: 28 * @px;
+                    line-height: 38 * @px;
+                }
+                &-date{
+                    color: #999999;
+                    margin-top: 10 * @px;
+                    font-size: 24 * @px;
+                }
+            }
+        }
+    }
     &-item{
         margin-bottom: @padding;
         &-title{
