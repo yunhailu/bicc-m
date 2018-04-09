@@ -41,6 +41,14 @@ const router = new Router({
                 resolve(require('@/components/Services/Services'));
             });
         }
+    }, {
+        name: 'about',
+        path: '/about',
+        component: (resolve) => {
+            require.ensure(['@/components/About/About'], () => {
+                resolve(require('@/components/About/About'));
+            });
+        }
     }]
 });
 

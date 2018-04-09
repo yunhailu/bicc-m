@@ -1,0 +1,77 @@
+@import "../common.less";
+
+.about{
+    &-header{
+        position: absolute;
+        z-index: 1000;
+    }
+    &-content{
+        margin-top: @header-height;
+        padding-top: 10 * @px;
+        &-item:nth-child(5n+1){
+            border-left: 8 * @px solid @color-blue;
+            color: @color-blue;
+        }
+        &-item:nth-child(5n+2){
+            border-left: 8 * @px solid @color-yellow;
+            color: @color-yellow;
+        }
+        &-item:nth-child(5n+3){
+            border-left: 8 * @px solid @color-red;
+            color: @color-red;
+        }
+        &-item:nth-child(5n+4){
+            border-left: 8 * @px solid @color-purple;
+            color: @color-purple;
+        }
+        &-item:nth-child(5n+5){
+            border-left: 8 * @px solid @color-green;
+            color:@color-green;
+        }
+        &-item{
+            background-color: white;
+            margin: 30 * @px 0 0 30 * @px;
+            border-radius: 2 * @px;
+            overflow: hidden;
+            border-left: 8 * @px solid #b8e781;
+            padding: @padding 0;
+            &-card{
+                @h: 60 * @px;
+                display: flex;
+                justify-content: space-between;
+                .card-unit{
+                    height: @h;
+                    line-height: @h;
+                    display: inline-flex;
+                    box-sizing: border-box;
+                    .fa{
+                        line-height: @h;
+                        margin: 0 auto;
+                    }
+                }
+                &-left{
+                    //width: 100 * @px;
+                    width: 15%;
+                    font-size: 42 * @px;
+                    border-right: 2 * @px solid #dedede;
+                }
+                &-center{
+                    //width: 400 * @px;
+                    font-size: 32 * @px;
+                    font-weight: bold;
+                    text-align: left;
+                    width: 70%;
+                    padding: 0 @padding;
+                    color: @word;
+                }
+                &-right{
+                    font-size: 24 * @px;
+                    line-height: @h;
+                    text-align: right;
+                    width: 15%;
+                    color: @word;
+                }
+            }
+        }
+    }
+}
