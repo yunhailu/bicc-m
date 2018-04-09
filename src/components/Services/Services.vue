@@ -35,7 +35,7 @@ import ServicesHeader from '../Common/Header/Header.vue';
 import Copyright from '../Common/Copyright/Copyright.vue';
 import Service from './Service/Service.vue';
 import Accommodations from './Accommodations/Accommodations.vue';
-import { getImageSrc } from '../../libs/reg';
+import { getImageSrc, getHTMLCxt } from '../../libs/reg';
 import { getServices, getAccommodations } from '../../libs/resourceApi';
 
 export default {
@@ -57,6 +57,7 @@ export default {
                 if (resp.length > 0) {
                     this.service = _.map(resp, item => {
                         item.image = getImageSrc(item.field_image)[0];
+                        item.description = getHTMLCxt(item.desc, 'p')[0];
                         return item;
                     });
                     console.log(this.service);
@@ -69,7 +70,8 @@ export default {
             return getAccommodations().then(resp => {
                 if (resp.length > 0) {
                     this.accommodations = _.map(resp, item => {
-                        item.image = getImageSrc(item.field_image)[0];
+                        item.img = getImageSrc(item.image)[0];
+                        item.description = getHTMLCxt(item.desc, 'p')[0] || getHTMLCxt(item.desc, 'div')[0];
                         return item;
                     });
                     console.log(this.accommodations);

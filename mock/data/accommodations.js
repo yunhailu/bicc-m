@@ -1,34 +1,38 @@
 module.exports = [
     {
-        "title": "MaQuanYing dormitory",
-        "desc": "MaQuanYing dormitory is located just in front of our MaQuanYing campus, very convenient for the students to get to class.the dormitory has:",
-        "field_image": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/large/public/224479898783142071.jpg?itok=_h8Peui8\" width=\"270\" height=\"160\" />"
+        "desc": "<p>MaQuanYing dormitory is located just in front of our MaQuanYing campus, very convenient for the students to get to class.</p>\n<p>the dormitory has:</p>\n<p>- 81 rooms (single &amp; double) well-equipped with bed, TV, desk, wardrobe, air conditioner, and furnished bathroom.</p>\n<p>- Dining-room.</p>\n<p>- Hall with table and chairs so the students meet and talk together.</p>\n<p> </p>\n<p><img style=\"height:300px; width:400px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/15315432787637046_0.jpg\" width=\"1280\" height=\"960\" alt=\"\" /></p>\n<p> </p>\n<p><img style=\"height:300px; width:400px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/46742580174325312_2.jpg\" width=\"1280\" height=\"960\" alt=\"\" /></p>\n<p> </p>\n<p><img style=\"height:533px; width:400px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/49512510802687948_0.jpg\" width=\"960\" height=\"1280\" alt=\"\" /></p>\n<p> </p>\n<p><img style=\"height:533px; width:400px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/461590706934294433.jpg\" width=\"960\" height=\"1280\" alt=\"\" /></p>\n<p> </p>\n<p><img style=\"height:533px; width:400px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/537547374514418286.jpg\" width=\"960\" height=\"1280\" alt=\"\" /></p>\n",
+        "date": "1464955152",
+        "image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/224479898783142071.jpg\" width=\"1280\" height=\"960\" alt=\"\" />"
         ],
+        "title": "MaQuanYing dormitory",
         "nid": "204"
     },
     {
-        "title": "Shared Apartment",
-        "desc": "Spacious, bright and sunny 2 bed apartment featuring all modern conveniences and approx 15-30 mins away from the school using public transportation.",
-        "field_image": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/large/public/1315022828_2008102151223313.jpg.jpeg?itok=kd92ltiY\" width=\"270\" height=\"160\" />"
+        "desc": "<p>Spacious, bright and sunny 2 bed apartment featuring all modern conveniences and approx 15-30 mins away from the school using public transportation. Available only to BICC students so you will be living in a safe and secure location with 1 or 2 other adult student, also attending the school. You will have your own private bedroom. You will share the bathroom and kitchen/living room areas only.</p>\n<p>\tRoom Lay Out :</p>\n<ul><li>Bedroom One: Double bed, set of bed linen and double duvet, built in wardrobe, chest of drawers, lamp, mirror etc.</li>\n<li>Bedroom Two: Double bed, set of bed linen and double duvet, built in wardrobe, chest of drawers, lamp, mirror etc.</li>\n<li>Bathroom: Shower, bath, toilet, wash basin and litter bin. Bath towels and hand towels are supplied.</li>\n<li>Living Area: Open-plan living area with two sofas. Includes coffee table, television, wooden floors, spot lighting etc.</li>\n<li>Dining Area: Open-plan dining area with circular dining table and 4 chairs.</li>\n<li>Kitchen: Fully fitted kitchen with electric oven, hob and extractor fan, fridge freezer, washing machine, electric kettle, toaster and microwave. Four sets of cutlery and crockery are provided. There is also a clothes horse for airing clothes, iron and ironing board, mop and a sweeping brush.</li>\n<li>The accommodation price below is per week. </li>\n</ul>",
+        "date": "1455457897",
+        "image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/1315022828_2008102151223313.jpg.jpeg\" width=\"599\" height=\"400\" alt=\"\" />"
         ],
+        "title": "Shared Apartment",
         "nid": "188"
     },
     {
-        "title": "Private Studio",
-        "desc": "We have carefully selected each of our host families regarding Homestay in Beijing to ensure excellent standards with good food and comfortable accommodation.",
-        "field_image": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/medium/public/gym1_0.jpeg?itok=ujZiq_uf\" width=\"270\" height=\"160\" />"
+        "desc": "<p>Located in some of the best apartment complexes in Beijing, approximately 10 minutes from the city centre, purpose built, studio style accommodation, with wooden floors throughout.<br /><br />\n\tThe apartment complex is located approximately 10 minutes walk from the subway station and school, providing easy access to the city centre.<br /><br />\n\tStudio room can be let for single or double occupancy, on a weekly, monthly or semester basis. All rooms are en suite. Bathrooms are tiled and have a toilet, wash-hand basin and power shower. <br /><br />\n\tThere is an iron and ironing board in each studio.<br /><br />\n\tA laundry service is available on request.<br /><br />\n\tEach studio room contains:</p>\n<ul><li>Either two single beds or one double bed</li>\n<li>Bed linen and duvet</li>\n<li>Two easy chairs</li>\n<li>Dining/study table and two chairs</li>\n<li>Two sets of cutlery and crockery</li>\n<li>Microwave</li>\n<li>Fridge</li>\n<li>Kettle</li>\n<li>Toaster</li>\n<li>Television</li>\n<li>Direct dial telephone</li>\n</ul><p>Early booking is advised to ensure the availability of your accommodation selection. All accommodation will be prepared prior to each students arrival in China. Accommodation fees include one day prior to program start until one day after program completion. Extra accommodation time is subject to availability and can be charged on a per day basis.</p>\n<p>The accommodation price below is <u>per week</u>. </p>\n<p><img alt=\"Learn Chinese IN beijing\" style=\"height:94px; width:578px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/Capture%20d%E2%80%99e%CC%81cran%202017-03-30%20a%CC%80%2012.15.09.png\" width=\"578\" height=\"94\" /></p>\n",
+        "date": "1455457774",
+        "image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/1315022758_425119_1244585788444.jpg.jpeg\" width=\"400\" height=\"300\" alt=\"\" />"
         ],
+        "title": "Private Studio",
         "nid": "187"
     },
     {
-        "title": "Homestay",
-        "desc": "We have carefully selected each of our host families regarding Homestay in Beijing to ensure excellent standards with good food and comfortable accommodation.",
-        "field_image": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/medium/public/gym1_0.jpeg?itok=ujZiq_uf\" width=\"270\" height=\"160\" />"
+        "desc": "<p>We have carefully selected each of our host families regarding Homestay in Beijing to ensure excellent standards with good food and comfortable accommodation.</p>\n<p>Host families are familiar with taking adult students, so you will have the freedom to come and go as you choose. Most importantly, you will feel welcome in the family home and practice Chinese throughout your stay. Chinese Homestay is the best option for accommodation.  </p>\n<p>The average travel time to and from the school is 20 minutes. You can purchase a travel pass for the bus &amp; train. You will receive information about this on your first day of school.</p>\n<p>During your Homestay in Beijing, family will provide half board accommodation i.e. breakfast and evening meal. If you have any special dietary requirements, you should inform us of this before you arrive so we can select the most suitable family for you.</p>\n<p>You can choose to have your own single bedroom or share with another student, just let us know your requirements at the time of booking. This would help us to find the right options of Homestay in Beijing for you. The family will provide a fresh set of towels each week and change the bed linen once per week. The family will also include your basic laundry items, such as, jeans, tee-shirts etc. once per week.</p>\n<p>We also guarantee that there will be no more than one nationality per family (one Chinese speaker, One French speaker etc.) so you should not be tempted to speak your own language whilst staying with the host family !</p>\n<p>You will be advised of your Chinese Homestay address and details before your arrival in Beijing. You can arrive on either a Saturday or Sunday and Depart also on a Saturday or Sunday. Check with us first, should you wish to arrive on a weekday. </p>\n<p>The accommodation price below is per week. </p>\n<p><img alt=\"LearnCHinese\" title=\"ChineseSchool\" style=\"height:104px; width:427px\" class=\"file-default media-element\" typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/Screen%20Shot%202017-11-22%20at%2013.35.15.png\" width=\"427\" height=\"104\" /></p>\n",
+        "date": "1455457460",
+        "image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/homestay.jpeg\" width=\"661\" height=\"464\" alt=\"\" />"
         ],
+        "title": "Homestay",
         "nid": "186"
     }
 ];

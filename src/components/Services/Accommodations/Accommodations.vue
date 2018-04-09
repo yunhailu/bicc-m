@@ -9,11 +9,11 @@
         <div class="accommodations-cards">
             <div class="accommodations-cards-item" :key="index" v-for="(item, index) in accommodations" @click="itemAction(item)">
                 <card>
-                    <img slot="header" class="accommodations-cards-item-image" :src="item.image" />
+                    <img slot="header" class="accommodations-cards-item-image" :src="item.img" />
                     <div slot="content" class="accommodations-cards-item-content">
                         <div class="accommodations-cards-item-more">more <i class="fa fa-angle-right"></i></div>
                         <p class="accommodations-cards-item-content-title" v-html="item.title"></p>
-                        <p class="accommodations-cards-item-content-text">{{item.desc}}</p>
+                        <p class="accommodations-cards-item-content-text">{{item.description}}</p>
                     </div>
                 </card>
             </div>
