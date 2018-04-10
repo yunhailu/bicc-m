@@ -1,0 +1,36 @@
+@import "../common.less";
+
+.detail{
+    &-header{
+        position: absolute;
+        z-index: 1000;
+    }
+    &-wrapper{
+        position: absolute;
+        top: @header-height;
+        left: 0;   right: 0;
+        bottom: 0;
+        background-color: white;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        &-container{
+            &-title{
+                font-size: 42 * @px;
+                text-align: center;
+                padding: @padding;
+            }
+            &-cxt{
+                font-size: 28 * @px;
+                padding: 10 * @px @padding 100 * @px;
+                p {
+                    padding: 0 0 20 * @px 0;
+                }
+                image {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

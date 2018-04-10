@@ -38,7 +38,8 @@ const API = !isDev ? {
 };
 
 const getNodeURL = id => {
-    return !isDev ? `${resourceRoot}/node/${id}.json` : `${mackRoot}/node_${id}`;
+    // return !isDev ? `${resourceRoot}/node/${id}.json` : `${mackRoot}/node_${id}`;
+    return !isDev ? `${resourceRoot}/node/${id}.json` : `${mackRoot}/node_14`;
 };
 
 const Request = {
@@ -174,4 +175,13 @@ export const recommendations = (params = {}) => {
  * */
 export const partners = (params = {}) => {
     return Request.ajax(API.GET_PARTNERS, { params, credentials: true });
+};
+
+/**
+ * @description 获取详情页面信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const getDetail = (params = {}) => {
+    return Request.ajax(getNodeURL(params.id), { params, credentials: true });
 };

@@ -57,6 +57,14 @@ const router = new Router({
                 resolve(require('@/components/List/List'));
             });
         }
+    }, {
+        name: 'detail',
+        path: '/detail/:id',
+        component: (resolve) => {
+            require.ensure(['@/components/Detail/Detail'], () => {
+                resolve(require('@/components/Detail/Detail'));
+            });
+        }
     }]
 });
 
