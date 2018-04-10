@@ -1,0 +1,95 @@
+@import "../../common.less";
+
+.tag{
+    position: relative;
+    margin: 20 * @px;
+    .purple{
+        color: @color-purple;
+    }
+    .yellow{
+        color: @color-yellow;
+    }
+    .red{
+        color: @color-red;
+    }
+    .blue{
+        color: @color-blue;
+    }
+    .green{
+        color: @color-green;
+    }
+    &-spot{
+        float: left;
+        width: 30 * @px;
+        height: 160 * @px;
+        &-line{
+            margin-left: 10 * @px;
+            margin-top: -30 * @px;
+            width: 1px;
+            height: 240 * @px;
+            background-color: #dedede;
+        }
+        &-cxt{
+            position: absolute;
+            top: 52 * @px;
+            margin-top: -20 * @px;
+            width: 24 * @px;
+            height: 24 * @px;
+            //border-radius: 50%;
+            font-size: 36 * @px;
+            //background-color: @color-purple;
+        }
+    }
+    &-item{
+        position: relative;
+        width: 600 * @px;
+        background-color: white;
+        border-radius: 8 * @px;
+        box-shadow: 0 0 * @px 20 * @px #dedede;
+        display: flex;
+        padding: 24 * @px;
+        margin-left: 50 * @px;
+        &-icon{
+            display: inline-flex;
+            &-img{
+                background-size: cover;
+                background-image: url('http://www.hibicc.com/system/files/styles/avatar/private/japanese%20photo.jpeg?itok=k8K9taWM');
+                width: 100 * @px;
+                height: 100 * @px;
+                border-radius: 50%;
+            }
+        }
+        &-text{
+            display: inline-block;
+            flex: 1;
+            font-size: 32 * @px;
+            height: 100 * @px;
+            line-height: 100 * @px;
+            box-sizing: border-box;
+            padding: 0 30 * @px;
+            .ellipsis();
+        }
+        &-user{
+            position: absolute;
+            //bottom: 0;
+            top: 50 * @px;
+            right: 10 * @px;
+            font-size: 36 * @px;
+            font-weight: bold;
+        }
+        &-trigle{
+            position: absolute;
+            top: 40 * @px;
+            bottom: 0;
+            left: -16 * @px;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 15 * @px solid transparent;
+            border-right: 15 * @px solid white;
+            border-bottom: 15 * @px solid transparent;
+            display: block;
+            //box-shadow: -6 * @px 0 * @px 10 * @px #dedede;
+        }
+    }
+}

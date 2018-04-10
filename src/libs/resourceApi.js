@@ -17,7 +17,11 @@ const API = !isDev ? {
     GET_COURSE_DETAIL: `${resourceRoot}/node/299.json`,
     GET_PRODUCTS: `${resourceRoot}/products.json`,
     GET_SERVICES: `${resourceRoot}/services.json`,
-    GET_ACCOMMODATIONS: `${resourceRoot}/accommodations.json`
+    GET_ACCOMMODATIONS: `${resourceRoot}/accommodations.json`,
+    GET_TESTIMONIALS: `${resourceRoot}/testimonials.json`,
+    GET_TEACHERS: `${resourceRoot}/teachers.json`,
+    GET_RECOMMENDATIONS: `${resourceRoot}/recommendations.json`,
+    GET_PARTNERS: `${resourceRoot}/partners.json`
 } : {
     HOMES_SLIDERS: `${mackRoot}/homesliders`,
     HOMES_ARTICLE: `${mackRoot}/node_57`,
@@ -26,7 +30,11 @@ const API = !isDev ? {
     GET_COURSE_DETAIL: `${mackRoot}/node_299`,
     GET_PRODUCTS: `${mackRoot}/products`,
     GET_SERVICES: `${mackRoot}/services`,
-    GET_ACCOMMODATIONS: `${mackRoot}/accommodations`
+    GET_ACCOMMODATIONS: `${mackRoot}/accommodations`,
+    GET_TESTIMONIALS: `${mackRoot}/testimonials`,
+    GET_TEACHERS: `${mackRoot}/teachers`,
+    GET_RECOMMENDATIONS: `${mackRoot}/recommendations`,
+    GET_PARTNERS: `${mackRoot}/partners`
 };
 
 const getNodeURL = id => {
@@ -130,4 +138,40 @@ export const getServices = (params = {}) => {
  * */
 export const getAccommodations = (params = {}) => {
     return Request.ajax(API.GET_ACCOMMODATIONS, { params, credentials: true });
+};
+
+/**
+ * @description 关于我们页面信息, 获取testimonials列表信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const testimonials = (params = {}) => {
+    return Request.ajax(API.GET_TESTIMONIALS, { params, credentials: true });
+};
+
+/**
+ * @description 关于我们页面信息, 获取teachers列表信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const teachers = (params = {}) => {
+    return Request.ajax(API.GET_TEACHERS, { params, credentials: true });
+};
+
+/**
+ * @description 关于我们页面信息, 获取recommendations列表信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const recommendations = (params = {}) => {
+    return Request.ajax(API.GET_RECOMMENDATIONS, { params, credentials: true });
+};
+
+/**
+ * @description 关于我们页面信息, 获取partners列表信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const partners = (params = {}) => {
+    return Request.ajax(API.GET_PARTNERS, { params, credentials: true });
 };

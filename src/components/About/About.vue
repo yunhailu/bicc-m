@@ -4,7 +4,7 @@
             <about-header></about-header>
         </div>
         <div class="about-content">
-            <div class="about-content-item" :key="index" v-for="(item, index) in about">
+            <div class="about-content-item" @click="clickAction(item)" :key="index" v-for="(item, index) in about">
                 <!--<card>-->
                     <div slot="content" class="about-content-item-card">
                         <div class="card-unit about-content-item-card-left">
@@ -40,6 +40,13 @@ export default {
             about,
             msg: 'Welcome to BICC!'
         };
+    },
+    methods: {
+        clickAction (item) {
+            console.log(item);
+            const { name, params } = item;
+            this.$router.push({ name, params });
+        }
     },
     components: { Card, AboutHeader, Copyright }
 };

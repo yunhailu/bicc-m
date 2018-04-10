@@ -23,26 +23,42 @@ export const colors = ['#9c81e7', '#e7818a', '#b8e781', '#e7a581', '#81a0e7'];
 
 export const about = [{
     text: 'About BICC',
-    icon: 'th-large'
+    icon: 'th-large',
+    name: 'detail',
+    params: { id: 14 }
 }, {
     text: 'Testimonials',
-    icon: 'tag'
+    icon: 'tag',
+    name: 'list',
+    params: { type: 1, category: 'testimonials' }
 }, {
     text: 'Learning System',
-    icon: 'sitemap'
+    icon: 'sitemap',
+    name: 'detail',
+    params: { id: 22 }
 }, {
     text: 'Teacher\'s Profile',
-    icon: 'tv'
+    icon: 'tv',
+    name: 'list',
+    params: { type: 1, category: 'teachers' }
 }, {
     text: 'Why choose BICC',
-    icon: 'anchor'
+    icon: 'anchor',
+    name: 'detail',
+    params: { id: 48 }
 }, {
     text: 'Recommendation',
-    icon: 'book'
+    icon: 'book',
+    name: 'list',
+    params: { type: 1, category: 'recommendations' }
 }, {
     text: 'Accreditations',
-    icon: 'shopping-bag'
+    icon: 'shopping-bag',
+    name: 'detail',
+    params: { id: 6 }
 }, {
     text: 'Partners',
-    icon: 'paper-plane'
+    icon: 'paper-plane',
+    name: 'list',
+    params: { type: 1, category: 'partners' }
 }];
