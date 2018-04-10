@@ -13,6 +13,8 @@ export const headerList = [{
     icon: 'server', text: 'Services', router: 'services'
 }, {
     icon: 'users', text: 'About us', router: 'about'
+}, {
+    icon: 'envelope-open', text: 'Contact us', router: 'contact'
 }];
 
 export const host = 'hibicc.com';
