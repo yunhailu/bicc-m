@@ -27,6 +27,14 @@ export const getAHref = html => {
     return result;
 };
 
+export const setAVoid = html => {
+    const result = getAHref(html);
+    result.forEach(item => {
+        html = html.replace(item, 'javascript:void(0);');
+    });
+    return html;
+};
+
 export const getHTMLCxt = (html, tag) => {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(html, 'text/xml');

@@ -39,6 +39,7 @@ export default {
     methods: {
         itemAction (item) {
             console.log('click this: ', item);
+            this.$router.push({ name: 'detail', params: { id: item.nid } });
         }
     },
     filters: {

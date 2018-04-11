@@ -38,8 +38,9 @@ export default {
         };
     },
     methods: {
-        itemAction (...rest) {
-            console.log(rest);
+        itemAction (item) {
+            console.log(item);
+            this.$router.push({ name: 'detail', params: { id: item.nid } });
         },
         toDetail (course) {
             console.log(course.nid);

@@ -79,6 +79,7 @@ export default {
         },
         recommendsAction (item) {
             console.log(item, getAHref(item.title)[0]);
+            this.$router.push({ name: 'detail', params: { id: item.nid } });
         },
         getSlider () {
             return homesSliders().then(resp => {

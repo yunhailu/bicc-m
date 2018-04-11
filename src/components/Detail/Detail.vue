@@ -21,6 +21,7 @@
 import DetailHeader from '../Common/Header/Header.vue';
 import Copyright from '../Common/Copyright/Copyright.vue';
 import { getDetail } from '../../libs/resourceApi';
+import { setAVoid } from '../../libs/reg';
 
 export default {
     name: 'Detail',
@@ -36,7 +37,8 @@ export default {
                 console.log(resp);
                 this.title = resp.title;
                 this.html = resp.body && resp.body.und && resp.body.und[0] && resp.body.und[0].value;
-                document.querySelector('.detail-wrapper-container-cxt').innerHTML = this.html;
+                this.html = setAVoid(this.html);
+                console.log(setAVoid(this.html));
             });
         },
         init () {
