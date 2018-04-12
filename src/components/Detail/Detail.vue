@@ -36,7 +36,7 @@ export default {
             return getDetail({ id }).then(resp => {
                 console.log(resp);
                 this.title = resp.title;
-                this.html = resp.body && resp.body.und && resp.body.und[0] && resp.body.und[0].value;
+                this.html = resp.body && resp.body.und && resp.body.und[0] && resp.body.und[0].safe_value;
                 this.html = setAVoid(this.html);
                 console.log(setAVoid(this.html));
             });

@@ -73,6 +73,14 @@ const router = new Router({
                 resolve(require('@/components/ContactUs/ContactUs'));
             });
         }
+    }, {
+        name: 'FAQ',
+        path: '/FAQ',
+        component: (resolve) => {
+            require.ensure(['@/components/FAQ/FAQ'], () => {
+                resolve(require('@/components/FAQ/FAQ'));
+            });
+        }
     }]
 });
 

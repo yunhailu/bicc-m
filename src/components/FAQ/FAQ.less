@@ -1,0 +1,57 @@
+@import "../common.less";
+
+.FAQ{
+    &-header{
+        position: absolute;
+        z-index: 1000;
+    }
+    &-wrapper{
+        position: absolute;
+        top: @header-height;
+        left: 0;   right: 0;
+        bottom: 0;
+        background-color: white;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        &-container{
+            padding: @padding;
+            &-image{
+                width: 100%;
+                margin-bottom: 50 * @px;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &-title{
+                text-align: center;
+                font-size: 42 * @px;
+                font-weight: bold;
+            }
+            &-item{
+                margin: @padding 0;
+                padding: 10 * @px 0 @padding 0;
+                border-bottom: 1px solid #dadada;
+                &-title{
+                    font-size: 32 * @px;
+                    font-weight: bold;
+                }
+                &-answer{
+                    margin: 20 * @px 0;
+                    line-height: 42 * @px;
+                    font-size: 26 * @px;
+                    p{
+                        margin: 30 * @px 0 0;
+                        line-height: 42 * @px;
+                        font-size: 26 * @px;
+                    }
+                    a{
+                        color: @word;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -32,6 +32,9 @@
                     </li>
                 </ul>
             </div>
+            <div class="home-FAQ">
+                <x-button type="primary" link="/FAQ" :gradients="['#434343', '#545454']">FAQ</x-button>
+            </div>
             <copyright></copyright>
             <!--<tab-bar></tab-bar>-->
         <!--</view-box>-->
@@ -44,7 +47,7 @@
 </style>
 
 <script>
-import { Search, ViewBox, Swiper } from 'vux';
+import { Search, ViewBox, Swiper, XButton } from 'vux';
 import TabBar from '../Common/TabBar/TabBar.vue';
 import HomeHeader from '../Common/Header/Header.vue';
 import Copyright from '../Common/Copyright/Copyright.vue';
@@ -112,6 +115,6 @@ export default {
     mounted () {
         this.init();
     },
-    components: { TabBar, HomeHeader, Copyright, Search, ViewBox, Swiper }
+    components: { TabBar, HomeHeader, Copyright, Search, ViewBox, Swiper, XButton }
 };
 </script>

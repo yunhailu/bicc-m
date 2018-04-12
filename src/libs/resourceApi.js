@@ -21,7 +21,8 @@ const API = !isDev ? {
     GET_TESTIMONIALS: `${resourceRoot}/testimonials.json`,
     GET_TEACHERS: `${resourceRoot}/teachers.json`,
     GET_RECOMMENDATIONS: `${resourceRoot}/recommendations.json`,
-    GET_PARTNERS: `${resourceRoot}/partners.json`
+    GET_PARTNERS: `${resourceRoot}/partners.json`,
+    GET_FAQ: `${resourceRoot}/faqs.json`
 } : {
     HOMES_SLIDERS: `${mackRoot}/homesliders`,
     HOMES_ARTICLE: `${mackRoot}/node_57`,
@@ -34,7 +35,8 @@ const API = !isDev ? {
     GET_TESTIMONIALS: `${mackRoot}/testimonials`,
     GET_TEACHERS: `${mackRoot}/teachers`,
     GET_RECOMMENDATIONS: `${mackRoot}/recommendations`,
-    GET_PARTNERS: `${mackRoot}/partners`
+    GET_PARTNERS: `${mackRoot}/partners`,
+    GET_FAQ: `${mackRoot}/faqs`
 };
 
 const getNodeURL = id => {
@@ -184,4 +186,13 @@ export const partners = (params = {}) => {
  * */
 export const getDetail = (params = {}) => {
     return Request.ajax(getNodeURL(params.id), { params, credentials: true });
+};
+
+/**
+ * @description 获取详情页面信息
+ * @param {Object} params - 必填项，以json对象形式传参
+ * @return {Promise}
+ * */
+export const getFAQ = (params = {}) => {
+    return Request.ajax(API.GET_FAQ, { params, credentials: true });
 };

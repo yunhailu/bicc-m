@@ -49,6 +49,7 @@ export default {
         },
         clickAction (item) {
             console.log(item);
+            this.$router.push({ name: 'detail', params: { id: item.nid } });
         },
         init () {
             this.getList();

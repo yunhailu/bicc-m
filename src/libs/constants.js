@@ -14,6 +14,8 @@ export const headerList = [{
 }, {
     icon: 'users', text: 'About us', router: 'about'
 }, {
+    icon: 'question-circle', text: 'FAQ', router: 'FAQ'
+}, {
     icon: 'envelope-open', text: 'Contact us', router: 'contact'
 }];
 
