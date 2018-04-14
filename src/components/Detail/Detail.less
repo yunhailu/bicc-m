@@ -28,14 +28,26 @@
                     font-size: 28 * @px;
                     text-underline: none;
                 }
-                image {
+                img {
                     display: block;
-                    width: 100%;
-                    height: auto;
+                    width: 100%!important;
+                    height: auto!important;
                 }
                 a {
                     text-underline: none;
                     color: @word;
+                }
+                li{
+                    list-style: none;
+                    overflow: auto;
+                    line-height: 42 * @px;
+                    table{
+                        width: 100%;
+                    }
+                }
+                .file-default{
+                    width: 100 * @px!important;
+                    height: auto!important;
                 }
             }
         }

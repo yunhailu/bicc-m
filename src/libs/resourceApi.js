@@ -41,7 +41,7 @@ const API = !isDev ? {
 
 const getNodeURL = id => {
     // return !isDev ? `${resourceRoot}/node/${id}.json` : `${mackRoot}/node_${id}`;
-    return !isDev ? `${resourceRoot}/node/${id}.json` : `${mackRoot}/node_57`;
+    return !isDev ? `${resourceRoot}/node/${id}.json` : `${mackRoot}/node_299`;
 };
 
 const Request = {
