@@ -1,0 +1,37 @@
+@import "../../common.less";
+
+.card{
+    position: relative;
+    margin: 30 * @px;
+    .purple{
+        color: @color-purple;
+    }
+    .yellow{
+        color: @color-yellow;
+    }
+    .red{
+        color: @color-red;
+    }
+    .blue{
+        color: @color-blue;
+    }
+    .green{
+        color: @color-green;
+    }
+    &-item{
+        position: relative;
+        background-color: white;
+        border-radius: 8 * @px;
+        box-shadow: 0 0 * @px 20 * @px #dedede;
+        display: flex;
+        overflow: hidden;
+        &-image{
+            width: 100%;
+            img{
+                display: block;
+                width: 100%;
+                height:auto;
+            }
+        }
+    }
+}

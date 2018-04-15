@@ -34,7 +34,7 @@ export const about = [{
     text: 'Testimonials',
     icon: 'tag',
     name: 'list',
-    params: { type: 1, category: 'testimonials' }
+    params: { type: 'tag', category: 'testimonials' }
 }, {
     text: 'Learning System',
     icon: 'sitemap',
@@ -44,7 +44,7 @@ export const about = [{
     text: 'Teacher\'s Profile',
     icon: 'tv',
     name: 'list',
-    params: { type: 1, category: 'teachers' }
+    params: { type: 'tag', category: 'teachers' }
 }, {
     text: 'Why choose BICC',
     icon: 'anchor',
@@ -54,7 +54,7 @@ export const about = [{
     text: 'Recommendation',
     icon: 'book',
     name: 'list',
-    params: { type: 1, category: 'recommendations' }
+    params: { type: 'tag', category: 'recommendations' }
 }, {
     text: 'Accreditations',
     icon: 'shopping-bag',
@@ -64,5 +64,5 @@ export const about = [{
     text: 'Partners',
     icon: 'paper-plane',
     name: 'list',
-    params: { type: 1, category: 'partners' }
+    params: { type: 'card', category: 'partners' }
 }];

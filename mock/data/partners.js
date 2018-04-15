@@ -1,32 +1,27 @@
 module.exports = [
     {
-        "nid": "272",
-        "图像": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/system/files/utlandsstudier_200_118.jpg\" width=\"200\" height=\"118\" alt=\"\" />"
+        "field_image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/system/files/styles/large/private/utlandsstudier_200_118.jpg?itok=ztgpGNCL\" width=\"200\" height=\"118\" alt=\"\" />"
         ]
     },
     {
-        "nid": "270",
-        "图像": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/system/files/DreamStudies_200_118.jpg\" width=\"200\" height=\"118\" alt=\"\" />"
+        "field_image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/system/files/styles/large/private/DreamStudies_200_118.jpg?itok=zFmeL1An\" width=\"200\" height=\"118\" alt=\"\" />"
         ]
     },
     {
-        "nid": "238",
-        "图像": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/Itochu.png\" width=\"147\" height=\"94\" />"
+        "field_image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/large/public/Itochu.png?itok=euuafnLk\" width=\"147\" height=\"94\" />"
         ]
     },
     {
-        "nid": "236",
-        "图像": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/goOverseas..jpg\" width=\"460\" height=\"460\" />"
+        "field_image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/large/public/goOverseas..jpg?itok=5wf8o38a\" width=\"460\" height=\"460\" />"
         ]
     },
     {
-        "nid": "71",
-        "图像": [
-            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/logo-tagline.png\" width=\"420\" height=\"327\" />"
+        "field_image": [
+            "<img typeof=\"foaf:Image\" src=\"http://www.hibicc.com/sites/hibicc.com/files/styles/large/public/logo-tagline.png?itok=E54QH50d\" width=\"420\" height=\"327\" />"
         ]
     }
 ];

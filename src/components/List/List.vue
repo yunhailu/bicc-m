@@ -5,8 +5,11 @@
         </div>
         <div class="list-content">
             <div class="list-content-tag">
-                <div class="list-content-tag-item" @click="clickAction(value)" :key="key" v-for="(value, key) in list">
+                <div class="list-content-tag-item" v-if="type == 'tag'" @click="clickAction(value)" :key="key" v-for="(value, key) in list">
                     <tag-item :item="value" :index="key"></tag-item>
+                </div>
+                <div class="list-content-tag-item" v-if="type == 'card'" @click="clickAction(value)" :key="key" v-for="(value, key) in list">
+                    <card-item :item="value" :index="key"></card-item>
                 </div>
             </div>
         </div>
@@ -22,6 +25,7 @@
 import _ from 'lodash';
 import ListHeader from '../Common/Header/Header.vue';
 import TagItem from './TagItem/TagItem.vue';
+import CardItem from './Card/Card.vue';
 import { testimonials, teachers, recommendations, partners } from '../../libs/resourceApi';
 import { getImageSrc } from '../../libs/reg';
 
@@ -29,7 +33,8 @@ export default {
     name: 'List',
     data () {
         return {
-            list: []
+            list: [],
+            type: this.$route.params.type
         };
     },
     methods: {
@@ -49,6 +54,7 @@ export default {
         },
         clickAction (item) {
             console.log(item);
+            if (!item.nid) return;
             this.$router.push({ name: 'detail', params: { id: item.nid } });
         },
         init () {
@@ -58,6 +64,6 @@ export default {
     mounted () {
         this.init();
     },
-    components: { ListHeader, TagItem }
+    components: { ListHeader, TagItem, CardItem }
 };
 </script>

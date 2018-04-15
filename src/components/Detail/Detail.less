@@ -41,14 +41,21 @@
                     list-style: none;
                     overflow: auto;
                     line-height: 42 * @px;
-                    table{
-                        width: 100%;
+                }
+                table{
+                    border-collapse: collapse;
+                    tr{
+                        border: 2 * @px solid #939393;
                     }
                 }
-                .file-default{
-                    width: 100 * @px!important;
-                    height: auto!important;
+                .html-table{
+                    width: 100%;
+                    overflow: auto;
                 }
+                //.file-default{
+                //    width: 100 * @px!important;
+                //    height: auto!important;
+                //}
             }
         }
     }

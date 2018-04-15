@@ -38,7 +38,8 @@ export default {
                 this.title = resp.title;
                 this.html = resp.body && resp.body.und && resp.body.und[0] && resp.body.und[0].safe_value;
                 this.html = setAVoid(this.html);
-                console.log(setAVoid(this.html));
+                // this.html = setTable(this.html);
+                console.log(this.html);
             });
         },
         init () {

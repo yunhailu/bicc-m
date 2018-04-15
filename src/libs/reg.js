@@ -4,7 +4,8 @@
 const REG = {
     img: /<img[^>]+src=['"]([^'"]+)['"]+/g,
     a: /<a[^>]+href=['"]([^'"]+)['"]+/g,
-    cxt: />([^>]+)</
+    cxt: />([^>]+)</,
+    table: /<table([^>]+)<\/table>/g
 };
 
 export const getImageSrc = html => {
@@ -48,4 +49,14 @@ export const getHTMLCxt = (html, tag) => {
         arr.push(countrys[i].textContent);
     }
     return arr;
+};
+
+export const setTable = html => {
+    let temp;
+
+    while ((temp = REG.table.exec(html)) != null) {
+        html.replace(REG.table, '<div class="html-table">' + temp[1] + '</div>');
+        console.log('<div class="html-table">' + temp[1] + '</div>');
+    }
+    return html;
 };

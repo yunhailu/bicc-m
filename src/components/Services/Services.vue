@@ -6,7 +6,7 @@
         <div class="services-tab">
             <tab :line-width="4">
                 <tab-item selected @on-item-click="handler">Service</tab-item>
-                <tab-item @on-item-click="handler">Accommodations</tab-item>
+                <tab-item @on-item-click="handler">Accommodation</tab-item>
             </tab>
         </div>
         <div class="services-content" :class="[active == 'service' ? 'services-content-service-active' : 'services-content-accommodations-active']">
