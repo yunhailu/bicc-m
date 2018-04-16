@@ -59,7 +59,7 @@ export const about = [{
     text: 'Accreditations',
     icon: 'shopping-bag',
     name: 'detail',
-    params: { id: 6 }
+    params: { id: 66 }
 }, {
     text: 'Partners',
     icon: 'paper-plane',
