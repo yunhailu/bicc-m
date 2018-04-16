@@ -4,6 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import flexible from './libs/flexible';
+import hm from './libs/hm';
 
 Vue.config.productionTip = false;
 
@@ -13,6 +14,7 @@ const app = {
     },
     init () {
         flexible();
+        hm();
         /* eslint-disable no-new */
         new Vue({
             el: '#app',
