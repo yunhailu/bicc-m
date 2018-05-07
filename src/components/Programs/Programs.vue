@@ -53,7 +53,7 @@ export default {
         getCourses () {
             return getCourses().then(resp => {
                 if (resp.length > 0) {
-                    this.courses = _.groupBy(resp, (item) => {
+                    this.courses = _.chain(resp).groupBy((item) => {
                         item.desc = getHTMLCxt(item.Overview, 'p')[0];
                         item.meta = {
                             source: item.field_course_type[0].toLowerCase(),
@@ -61,7 +61,12 @@ export default {
                         };
                         item.url = '';
                         return item.field_course_type[0];
-                    });
+                    }).map((item, key) => {
+                        return {
+                            name: key,
+                            data: item
+                        };
+                    }).reverse().value();
                     console.log('courses', this.courses);
                     return this.courses;
                 }

@@ -1,7 +1,7 @@
 <template>
     <div class="courses">
         <div class="courses-item" :key="groupName" v-for="(group, groupName) in courses">
-            <panel :header="groupName" :list="group" type="4" @on-click-item="itemAction"></panel>
+            <panel :header="group.name" :list="group.data" type="4" @on-click-item="itemAction"></panel>
         </div>
     </div>
 </template>
